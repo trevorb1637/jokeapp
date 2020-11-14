@@ -1,0 +1,9 @@
+<div class="card" *ngIf="tenjokes">
+    <div class="card-header">
+      Your Random Jokes
+    </div>
+    <div class="card-body" *ngFor="let tenjoke of tenjokes">
+      <h5 class="card-title">{{tenjoke.setup}}</h5>
+      <p class="card-text">{{tenjoke.punchline}}</p>
+    </div>
+  </div>
